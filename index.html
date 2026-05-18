@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sales Saarthi</title>
+  <title>Sales Saarthi | Founder-Led Outbound</title>
   <meta
     name="description"
-    content="Sales Saarthi helps founders with lead generation, messaging, outbound consulting, meeting support, and closing support."
+    content="Sales Saarthi helps founders and B2B teams with lead generation, messaging, outbound consulting, meeting support, and closing support."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +16,13 @@
       --bg:#f6f2eb;
       --card:#ffffff;
       --navy:#0d2350;
-      --navy-2:#16386f;
       --gold:#f2b43d;
-      --gold-2:#f6c65a;
       --line:#e9e1d7;
       --text:#1f2a3d;
       --muted:#5d6678;
       --soft-blue:#e8f0fb;
       --soft-gold:#fbf1dc;
-      --shadow:0 12px 28px rgba(10, 24, 56, 0.08);
+      --shadow:0 12px 28px rgba(10,24,56,0.08);
       --radius:24px;
       --radius-sm:18px;
     }
@@ -38,9 +36,8 @@
       padding:16px;
       line-height:1.5;
     }
-
     a{text-decoration:none;color:inherit}
-    img{max-width:100%}
+    img{max-width:100%;display:block}
 
     .shell{
       max-width:1280px;
@@ -68,27 +65,19 @@
       justify-content:space-between;
       align-items:center;
       gap:24px;
-      padding:22px 0;
+      padding:18px 0;
     }
 
-    .logo{
-      font-family:'Playfair Display',serif;
-      font-size:2.15rem;
-      color:var(--navy);
-      line-height:1;
-      position:relative;
-      display:inline-block;
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
     }
 
-    .logo::after{
-      content:"";
-      position:absolute;
-      left:98px;
-      bottom:-10px;
-      width:98px;
-      height:10px;
-      border-bottom:4px solid var(--gold);
-      border-radius:999px;
+    .brand img{
+      height:52px;
+      width:auto;
+      object-fit:contain;
     }
 
     .nav-links{
@@ -175,7 +164,7 @@
 
     .btn-secondary{
       color:var(--navy);
-      border-bottom:2px solid rgba(13,35,80,0.2);
+      border-bottom:2px solid rgba(13,35,80,.2);
       border-radius:0;
       padding:12px 2px;
     }
@@ -762,12 +751,7 @@
         align-items:flex-start;
       }
       .nav-links{gap:18px}
-      .logo{
-        font-size:1.7rem;
-      }
-      .logo::after{
-        left:76px;width:78px;
-      }
+      .brand img{height:42px}
       .hero h1{
         font-size:2.95rem;
       }
@@ -824,7 +808,9 @@
   <div class="shell">
     <header>
       <div class="container nav">
-        <a href="#" class="logo">Sales Saarthi</a>
+        <a href="#" class="brand">
+          <img src="Logo_Salessaarthi.png" alt="Sales Saarthi logo">
+        </a>
 
         <nav class="nav-links">
           <a href="#about">About</a>
